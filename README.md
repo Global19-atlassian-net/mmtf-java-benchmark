@@ -1,7 +1,12 @@
-This repository contains the code for benchmarking the performance of Java MMTF parsing. 
+## Benchmarks for comparing 3D structure file parser performance in BioJava
+
+This repository contains Java code for comparing the file parsing performance of the [PDB and PDBx/mmCIF](https://www.wwpdb.org/documentation/file-format) file formats with the new MacroMolecular Transmission Format, [MMTF](http://mmtf.rcsb.org) using the BioJava parsers. The results of these benchmarks are described in the paper: MMTF - an efficient file format for the transmission, visualization, and analysis of macromolecular structures (2017) [bioRxiv 122689](https://doi.org/10.1101/122689). 
+
+This repository also contains [benchmark datasets](https://github.com/rcsb/mmtf-java-benchmark/tree/master/mmtf-java-benchmark/src/main/resources/mmtf-benchmark): sample_1000.csv is a set of 1000 randomly selected PDB structures, sample_25.csv, sample_50.csv, sample_75.csv contain 100 structures each around the 25, 50 and 75 percentile of the PDB size distribution: Q25 (2,309-2,313 atoms), Q50 (4,054-4,063 atoms), Q75 (7,862-7,885 atoms).
+
 
 ## How to run
-The best way is to use Maven.</br>
+The software can be installed and build with the Maven build system.</br>
 [Where to download Maven](http://maven.apache.org/download.cgi)</br>
 [How to install Maven](http://maven.apache.org/install.html)
 
